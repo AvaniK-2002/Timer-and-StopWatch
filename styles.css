@@ -1,0 +1,106 @@
+
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+    background-image: url(bak.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+header {
+    color: rgb(198, 20, 198);
+    text-align: center;
+    padding: 1rem;
+    font-size: xx-large;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 1rem;
+    border: white;
+    
+}
+
+.box {
+    border: none;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+    width: 300px; 
+    display: none; 
+}
+
+/*  breakpoints for responsiveness */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .box {
+        width: 100%; 
+    }
+}
+
+
+.display {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    border-radius: 5rem;
+    border: solid rgb(242, 233, 233);
+    color: aliceblue;
+}
+
+button {
+    background-color: rgb(10, 152, 208);
+    color: black;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 0.2rem;
+    cursor: pointer;
+    
+    
+}
+
+button:hover {
+    color: aliceblue;
+    background-color: rgb(9, 64, 243);
+    transform: scale(1.05);
+    animation: forwards 1s infinite;
+    
+}
+
+
+
+.toggle {
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-left: 46%;
+    cursor: pointer;
+}
+#customTime {
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid rgb(103, 102, 102);
+    border-radius: 5px;
+    margin: 10px;
+    background-color: transparent; 
+   margin-bottom: 2rem;
+}
+
+#customTime::placeholder {
+    color: rgb(120, 119, 119);
+}
+
+#customTime:focus {
+    outline: none;
+    border-color: rgb(251, 249, 252);
+    color: aliceblue;
+}
+

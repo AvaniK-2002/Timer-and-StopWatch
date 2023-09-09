@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Timer and Stopwatch</title>
+</head>
+<body>
+    <header>
+        <h1>Timer and Stopwatch</h1>
+       
+    </header>
+
+    <div class="container">
+        <!-- Timer Box -->
+        <div class="box" id="timer">
+            <h2 style="color: aliceblue;">Timer</h2>
+            <div class="display">00:00</div>
+            <input type="text" id="customTime" placeholder="Enter time (in seconds)">
+            <button id="startTimer">Start</button>
+            <button id="stopTimer">Stop</button>
+            <button id="resetTimer">Reset</button>
+            
+        </div>
+        
+        
+        <!-- Stopwatch Box -->
+        <div class="box" id="stopwatch">
+            <h2 style="color: aliceblue;">Stopwatch</h2>
+            <div class="display">00:00:00</div>
+            <button id="startStopwatch">Start</button>
+            <button id="stopStopwatch">Stop</button>
+            <button id="resetStopwatch">Reset</button>
+            
+
+        </div>
+       
+    </div>
+    <div class="toggle">
+    <button id="toggleButton">Toggle</button>
+</div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
